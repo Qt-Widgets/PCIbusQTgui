@@ -1,3 +1,4 @@
+
 /****************************************************************************
 **
 ** Copyright (C) 2016 The Qt Company Ltd.
@@ -78,32 +79,34 @@ View::View(QWidget *parent,QVector<QString> signal,QVector<QString> signalNames,
     {
         if(signalNames[i]=="AD" || signalNames[i]=="C/BE")
         {
-            SignalValues.resize(signal.size()-1);
-            SignalValuesRange.resize(signal.size()-1);
 
+
+            View::extrctData(signal[i+1],i-dataError);
             QPen pen(QRgb(0xfdb157));
             pen.setWidth(3);
-            View::extrctData(signal[i+1],i);
             QString baseSignal = View::NotBit(signal[i]);
             QString mirrorSignal=View::NotBitMirror(signal[i]);
             NumberofPoints(baseSignal);
-            QLineSeries *series = View::GetPoints(baseSignal,i*2,i,false,false);
+            QLineSeries *series = View::GetPoints(baseSignal,(i-dataError)*2,i-dataError,false,false);
             series->setPen(pen);
             m_chart->addSeries(series);
             connect(series, &QLineSeries::clicked, this, &View::keepCallout);
             connect(series, &QLineSeries::hovered, this, &View::tooltip);
             series->attachAxis(axisX);
             series->attachAxis(axisY);
-            series = View::GetPoints(mirrorSignal,i*2,i,true,false);
+            series = View::GetPoints(mirrorSignal,(i-dataError)*2,i,true,false);
             series->setPen(pen);
             m_chart->addSeries(series);
-            axisY->append(signalNames[i],(i+1)*2);
+            axisY->append(signalNames[i],((i-dataError)+1)*2);
             connect(series, &QLineSeries::clicked, this, &View::keepCallout);
             connect(series, &QLineSeries::hovered, this, &View::tooltip);
             series->attachAxis(axisX);
             series->attachAxis(axisY);
             i++;
             dataError++;
+            SignalValues.resize(signal.size()-dataError);
+            SignalValuesRange.resize(signal.size()-dataError);
+
         }
         else{
         QLineSeries *series = View::GetPoints(signal[i],(i-dataError)*2,i-dataError,false,true);
@@ -275,7 +278,11 @@ QLineSeries* View::GetPoints(QString signal,int Yindex,int SignalIndex,bool mirr
              {
                  point.setY(0.5+Yindex);
                  points.append(point);
-                 if(!mirror)
+                 if(!mirror && !bitCheck)
+                 {
+                     SignalValuesRange[SignalIndex].append(i-slashError);
+                 }
+                 else if(bitCheck && !mirror)
                  {
                      SignalValuesRange[SignalIndex].append(i-slashError);
                      SignalValues[SignalIndex].append(bit);
@@ -285,7 +292,11 @@ QLineSeries* View::GetPoints(QString signal,int Yindex,int SignalIndex,bool mirr
              {
                  point.setY(bit_1.toInt()+Yindex);
                  points.append(point);
-                 if(!mirror)
+                 if(!mirror && !bitCheck)
+                 {
+                     SignalValuesRange[SignalIndex].append(i-slashError);
+                 }
+                 else if(bitCheck && !mirror)
                  {
                      SignalValuesRange[SignalIndex].append(i-slashError);
                      SignalValues[SignalIndex].append(bit);
@@ -368,6 +379,7 @@ QLineSeries* View::GetPoints(QString signal,int Yindex,int SignalIndex,bool mirr
     if(points.size()>0){
         point.setX(points.last().x()+1);
         point.setY(points.last().y());
+        if(!mirror)
         SignalValuesRange[SignalIndex].append(points.last().x()+1);
         points.append(point);
     }
