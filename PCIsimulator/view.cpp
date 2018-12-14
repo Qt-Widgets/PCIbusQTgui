@@ -83,27 +83,29 @@ View::View(QWidget *parent,QVector<QString> signal,QVector<QString> signalNames,
 
             QPen pen(QRgb(0xfdb157));
             pen.setWidth(3);
-            View::extrctData(signal[i+1],i);
+            View::extrctData(signal[i+1],(i-dataError));
             QString baseSignal = View::NotBit(signal[i]);
             QString mirrorSignal=View::NotBitMirror(signal[i]);
             NumberofPoints(baseSignal);
-            QLineSeries *series = View::GetPoints(baseSignal,i*2,i,false,false);
+            QLineSeries *series = View::GetPoints(baseSignal,(i-dataError)*2,(i-dataError),false,false);
             series->setPen(pen);
             m_chart->addSeries(series);
             connect(series, &QLineSeries::clicked, this, &View::keepCallout);
             connect(series, &QLineSeries::hovered, this, &View::tooltip);
             series->attachAxis(axisX);
             series->attachAxis(axisY);
-            series = View::GetPoints(mirrorSignal,i*2,i,true,false);
+            series = View::GetPoints(mirrorSignal,(i-dataError)*2,(i-dataError),true,false);
             series->setPen(pen);
             m_chart->addSeries(series);
-            axisY->append(signalNames[i],(i+1)*2);
+            axisY->append(signalNames[i],((i-dataError)+1)*2);
             connect(series, &QLineSeries::clicked, this, &View::keepCallout);
             connect(series, &QLineSeries::hovered, this, &View::tooltip);
             series->attachAxis(axisX);
             series->attachAxis(axisY);
             i++;
             dataError++;
+            SignalValues.resize(signal.size()-1);
+            SignalValuesRange.resize(signal.size()-1);
         }
         else{
         QLineSeries *series = View::GetPoints(signal[i],(i-dataError)*2,i-dataError,false,true);
