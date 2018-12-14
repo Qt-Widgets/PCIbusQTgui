@@ -28,7 +28,7 @@ void MainWindow::on_pushButton_clicked()
     name.append("amir");
 
     signal.append(input);
-     input = "1110010";
+     input = "x1xx110x01x0";
     signal.append(input);
     signal.append("1xxx1/1");
     signal.append("63/x/616/dasd");

@@ -278,7 +278,7 @@ QLineSeries* View::GetPoints(QString signal,int Yindex,int SignalIndex,bool mirr
                  if(!mirror)
                  {
                      SignalValuesRange[SignalIndex].append(i-slashError);
-                     SignalValues[SignalIndex].append("x");
+                     SignalValues[SignalIndex].append(bit);
                  }
              }
              else
@@ -352,6 +352,8 @@ QLineSeries* View::GetPoints(QString signal,int Yindex,int SignalIndex,bool mirr
              {
                  point.setY(0.5+Yindex);
                  points.append(point);
+                 if(bitCheck && !mirror)
+                    SignalValues[SignalIndex].append("x");
              }
              else
              {
