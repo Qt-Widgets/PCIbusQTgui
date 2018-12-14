@@ -30,14 +30,16 @@ SOURCES += \
         mainwindow.cpp \
     callout.cpp \
     view.cpp \
-    device.cpp
+    device.cpp \
+    pci.cpp
 
 
 HEADERS += \
         mainwindow.h \
     callout.h \
     view.h \
-    device.h
+    device.h \
+    pci.h
 
 
 FORMS += \

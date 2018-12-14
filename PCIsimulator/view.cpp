@@ -47,8 +47,7 @@ View::View(QWidget *parent,QVector<QString> signal,QVector<QString> signalNames,
     setDragMode(QGraphicsView::NoDrag);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    signal1=signal;
-    signalNames1=signalNames;
+
 /****************************************************************************/
     // chart setup
     m_chart = new QChart;

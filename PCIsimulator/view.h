@@ -79,8 +79,6 @@ private:
     QList<Callout *> m_callouts;
     QVector< QVector< QString > > SignalValues;
     QVector< QVector< double > > SignalValuesRange;
-    QVector<QString> signal1;
-    QVector<QString> signalNames1;
 };
 
 #endif
