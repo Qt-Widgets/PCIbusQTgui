@@ -19,6 +19,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_DevA_InitiatorRadio_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
     View * Graph;

@@ -27,24 +27,15 @@ void MainWindow::on_pushButton_clicked()
     name.append("data");
     name.append("amir");
 
-    name.append("asd");
-    name.append("C/BE");
-    name.append("data");
     signal.append(input);
-     input = "x1xx110x01x0";
+    input = "x1xx110x01x0";
     signal.append(input);
-
-
-
-
-    signal.append("11/1/1/1");
+    signal.append("1xxx1/1");
     signal.append("63/x/616/dasd");
+    signal.append(input);
 
-    signal.append(input);
-    signal.append(input);
-    signal.append("1xx11/1");
-    signal.append("63/x/616/dasd");
 
     Graph=new View(0,signal,name,6);
     Graph->show();
 }
+

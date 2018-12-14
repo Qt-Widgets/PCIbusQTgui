@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1159</width>
-    <height>698</height>
+    <width>1289</width>
+    <height>791</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>1131</width>
-      <height>560</height>
+      <width>1241</width>
+      <height>524</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_53">
@@ -53,6 +53,9 @@
            <property name="text">
             <string>Initiator</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -60,6 +63,9 @@
            <property name="text">
             <string>Idle</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -104,6 +110,9 @@
            <property name="text">
             <string>Read</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_3</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -111,6 +120,9 @@
            <property name="text">
             <string>Write</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_3</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -145,8 +157,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>276</width>
-            <height>313</height>
+            <width>301</width>
+            <height>294</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout">
@@ -416,6 +428,9 @@
            <property name="text">
             <string>Initiator</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -423,6 +438,9 @@
            <property name="text">
             <string>Idle</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_2</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -467,6 +485,9 @@
            <property name="text">
             <string>Read</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_4</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -474,6 +495,9 @@
            <property name="text">
             <string>Write</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_4</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -506,10 +530,10 @@
          <widget class="QWidget" name="scrollAreaWidgetContents_2">
           <property name="geometry">
            <rect>
-            <x>-2</x>
+            <x>0</x>
             <y>0</y>
-            <width>276</width>
-            <height>313</height>
+            <width>301</width>
+            <height>294</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
@@ -779,6 +803,9 @@
            <property name="text">
             <string>Initiator</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_5</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -786,6 +813,9 @@
            <property name="text">
             <string>Idle</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_5</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -830,6 +860,9 @@
            <property name="text">
             <string>Read</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_6</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -837,6 +870,9 @@
            <property name="text">
             <string>Write</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_6</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -869,10 +905,10 @@
          <widget class="QWidget" name="scrollAreaWidgetContents_3">
           <property name="geometry">
            <rect>
-            <x>-3</x>
+            <x>0</x>
             <y>0</y>
-            <width>276</width>
-            <height>313</height>
+            <width>302</width>
+            <height>294</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -1142,6 +1178,9 @@
            <property name="text">
             <string>Initiator</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_7</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -1149,6 +1188,9 @@
            <property name="text">
             <string>Idle</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_7</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -1193,6 +1235,9 @@
            <property name="text">
             <string>Read</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_8</string>
+           </attribute>
           </widget>
          </item>
          <item>
@@ -1200,6 +1245,9 @@
            <property name="text">
             <string>Write</string>
            </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup_8</string>
+           </attribute>
           </widget>
          </item>
         </layout>
@@ -1234,8 +1282,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>276</width>
-            <height>313</height>
+            <width>301</width>
+            <height>294</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
@@ -1251,10 +1299,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row1Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_171"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row1Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_172"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row1Byte2"/>
@@ -1274,10 +1322,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row2Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_174"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row2Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_175"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row2Byte2"/>
@@ -1297,10 +1345,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row3Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_177"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row3Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_178"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row3Byte2"/>
@@ -1320,10 +1368,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row4Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_180"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row4Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_181"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row4Byte2"/>
@@ -1343,10 +1391,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row5Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_184"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row5Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_185"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row5Byte2"/>
@@ -1366,10 +1414,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row6Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_188"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row6Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_189"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row6Byte2"/>
@@ -1389,10 +1437,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row7Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_34"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row7Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_35"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row7Byte2"/>
@@ -1412,10 +1460,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row8Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_192"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row8Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_193"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row8Byte2"/>
@@ -1435,10 +1483,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row9Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_195"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row9Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_196"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row9Byte2"/>
@@ -1458,10 +1506,10 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row10Byte4"/>
+                <widget class="QLineEdit" name="lineEdit_198"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row10Byte3"/>
+                <widget class="QLineEdit" name="lineEdit_199"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Row10Byte2"/>
@@ -1500,7 +1548,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1159</width>
+     <width>1289</width>
      <height>21</height>
     </rect>
    </property>
@@ -1518,4 +1566,14 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_6"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_8"/>
+ </buttongroups>
 </ui>

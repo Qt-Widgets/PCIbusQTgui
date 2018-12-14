@@ -29,13 +29,15 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     callout.cpp \
-    view.cpp
+    view.cpp \
+    device.cpp
 
 
 HEADERS += \
         mainwindow.h \
     callout.h \
-    view.h
+    view.h \
+    device.h
 
 
 FORMS += \
