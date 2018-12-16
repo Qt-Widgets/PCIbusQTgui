@@ -4,6 +4,7 @@
 #include "device.h"
 #include <QDebug>
 #include <subwindow.h>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)

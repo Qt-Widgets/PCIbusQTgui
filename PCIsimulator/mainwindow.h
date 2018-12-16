@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "view.h"
 #include "subwindow.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -18,8 +19,6 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-
-    void on_DevA_InitiatorRadio_toggled(bool checked);
 
     void on_DevA_spinBox_editingFinished();
 

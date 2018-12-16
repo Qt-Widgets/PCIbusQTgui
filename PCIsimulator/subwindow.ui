@@ -128,23 +128,7 @@
      <widget class="QSpinBox" name="Trans3_Spinbox"/>
     </item>
     <item>
-     <widget class="QComboBox" name="Trans3_comboBox">
-      <item>
-       <property name="text">
-        <string>Data Phase 1</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Data Phase 2</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Data Phase 3</string>
-       </property>
-      </item>
-     </widget>
+     <widget class="QComboBox" name="Trans3_comboBox"/>
     </item>
     <item>
      <widget class="QLabel" name="label_12">
@@ -221,23 +205,7 @@
      <widget class="QSpinBox" name="Trans4_Spinbox"/>
     </item>
     <item>
-     <widget class="QComboBox" name="Trans4_comboBox">
-      <item>
-       <property name="text">
-        <string>Data Phase 1</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Data Phase 2</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Data Phase 3</string>
-       </property>
-      </item>
-     </widget>
+     <widget class="QComboBox" name="Trans4_comboBox"/>
     </item>
     <item>
      <widget class="QLabel" name="label_15">
@@ -276,7 +244,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
