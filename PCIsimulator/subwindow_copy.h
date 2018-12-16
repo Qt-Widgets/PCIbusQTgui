@@ -17,6 +17,9 @@ public:
 
     void ComboBoxItems();
 
+
+
+
 private slots:
     void on_Trans1_Spinbox_editingFinished();
 

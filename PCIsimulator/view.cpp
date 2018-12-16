@@ -75,7 +75,7 @@ View::View(QWidget *parent,QVector<QString> signal,QVector<QString> signalNames,
     int dataError=0;
     for(int i =0; i<signal.size();i++)
     {
-        if(signalNames[i]=="AD" || signalNames[i]=="C/BE")
+        if(signalNames[i]=="AD" || signalNames[i]=="CBE")
         {
             SignalValues.resize(signal.size()-1);
             SignalValuesRange.resize(signal.size()-1);

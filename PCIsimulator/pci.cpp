@@ -19,7 +19,7 @@ void PCI::SetClock(int NumberOfCycles){
     Clk="";
     for(int i = 0;i<NumberOfCycles;i++)
     {
-       Clk+="10";
+       Clk+="01";
     }
 }
 
@@ -58,59 +58,154 @@ void PCI::SetDEVSEL(QString bit){
     DEVSEL+=bit;
 }
 
-QChar PCI::GetFrame(){
+QChar PCI::GetFrameBit(){
     return Frame[Frame.size()-1];
 }
 
-QChar PCI::GetAD(){
+QChar PCI::GetADBit(){
     return AD[AD.size()-1];
 }
 
-QString PCI::GetData(){
+QString PCI::GetDataBit(){
     QString data="";
-    for(int i =Data.size()-1;i>=0;i--)
+    int NumberOfSlash=0;
+    for(int i=0; i<Data.size();i++){
+        if(Data[i]=='/')
+            NumberOfSlash++;
+    }
+
+    for(int i=0; i<Data.size();i++)
     {
-        if(Control_Byte[i]!='/')
+        if(Data[i]=='/')
+            NumberOfSlash--;
+        else if(NumberOfSlash==0)
             data+=Data[i];
-        else
-            break;
+
     }
     return data;
 }
 
-QChar PCI::GetCBE(){
+QChar PCI::GetCBEBit(){
     return CBE[CBE.size()-1];
 }
 
-QString PCI::GetControl_Byte(){
+QString PCI::GetControl_ByteBit(){
     QString control="";
-    for(int i =Control_Byte.size()-1;i>=0;i--)
+    int NumberOfSlash=0;
+    for(int i=0; i<Control_Byte.size();i++){
+        if(Control_Byte[i]=='/')
+            NumberOfSlash++;
+    }
+
+    for(int i=0; i<Control_Byte.size();i++)
     {
-        if(Control_Byte[i]!='/')
+        if(Control_Byte[i]=='/')
+            NumberOfSlash--;
+        else if(NumberOfSlash==0)
             control+=Control_Byte[i];
-        else
-            break;
+
     }
     return control;
 }
 
-QChar PCI::GetIRDY(){
+QChar PCI::GetIRDYBit(){
     return IRDY[IRDY.size()-1];
 }
 
-QChar PCI::GetTRDY(){
+QChar PCI::GetTRDYBit(){
     return TRDY[TRDY.size()-1];
 }
 
-QChar PCI::GetClk(int ClockEdge){
+QChar PCI::GetClkBit(int ClockEdge){
     return Clk[ClockEdge];
 }
 
-QChar PCI::GetReset(){
+QChar PCI::GetResetBit(){
     return Reset[Reset.size()-1];
 }
 
-QChar PCI::GetDEVSEL(){
+QChar PCI::GetDEVSELBit(){
     return DEVSEL[DEVSEL.size()-1];
 }
+QString PCI::GetFrame(){
+    return Frame;
+}
+QString PCI::GetAD(){
+    return AD;
+}
+QString PCI::GetData(){
+    return Data;
+}
+QString PCI::GetCBE(){
+    return CBE;
+}
+QString PCI::GetControl_Byte(){
+    return Control_Byte;
+}
+QString PCI::GetIRDY(){
+    return IRDY;
+}
+QString PCI::GetTRDY(){
+    return TRDY;
+}
+QString PCI::GetDEVSEL(){
+    return DEVSEL;
+}
+QString PCI::GetClk(){
+    return Clk;
+}
+QString PCI::GetReset(){
+    return Reset;
+}
+
+void PCI::SetPreviousBit(QString Signals){
+    QString Signalname="";
+    for(int i=0;i<Signals.size();i++){
+        if(Signals[i]!='/'){
+            Signalname+=Signals[i];
+        }
+        else
+        {
+            if(Signalname=="Frame")
+            {
+                Frame+=Frame[Frame.size()-1];
+            }
+            else if(Signalname=="AD")
+            {
+                AD+="1";
+            }
+            else if(Signalname=="CBE")
+            {
+                CBE+="1";
+            }
+            else if(Signalname=="IRDY")
+            {
+                IRDY+=IRDY[IRDY.size()-1];
+            }
+            else if(Signalname=="TRDY")
+            {
+                TRDY+=TRDY[TRDY.size()-1];
+            }
+            else if(Signalname=="DEVSEL")
+            {
+                DEVSEL+=DEVSEL[DEVSEL.size()-1];
+            }
+            else if(Signalname=="Reset")
+            {
+                Reset+=Reset[Reset.size()-1];
+            }
+            Signalname="";
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
 

@@ -5,6 +5,40 @@
 
 class PCI
 {
+public:
+    PCI();
+    void SetReset(QString bit);
+    void SetFrame(QString bit);
+    void SetAD(QString bit);
+    void Setdata(QString bit);
+    void SetCBE(QString bit);
+    void SetControl_Byte(QString bit);
+    void SetIRDY(QString bit);
+    void SetTRDY(QString bit);
+    void SetDEVSEL(QString bit);
+    void SetClock(int NumberOfCycles);
+    void SetPreviousBit(QString Signals);
+    QChar GetFrameBit();
+    QChar GetADBit();
+    QString GetDataBit();
+    QChar GetCBEBit();
+    QString GetControl_ByteBit();
+    QChar GetIRDYBit();
+    QChar GetTRDYBit();
+    QChar GetDEVSELBit();
+    QChar GetClkBit(int ClockEdge);
+    QChar GetResetBit();
+    QString GetFrame();
+    QString GetAD();
+    QString GetData();
+    QString GetCBE();
+    QString GetControl_Byte();
+    QString GetIRDY();
+    QString GetTRDY();
+    QString GetDEVSEL();
+    QString GetClk();
+    QString GetReset();
+
 
 private:
    QString Frame;
@@ -17,30 +51,6 @@ private:
    QString DEVSEL;
    QString Clk;
    QString Reset;
-
-public:
-    PCI();
-    void SetReset(QString bit);
-    void SetFrame(QString bit);
-    void SetAD(QString bit);
-    void Setdata(QString bit);
-    void SetCBE(QString bit);
-    void SetControl_Byte(QString bit);
-    void SetIRDY(QString bit);
-    void SetTRDY(QString bit);
-    void SetDEVSEL(QString bit);
-    QChar GetFrame();
-    QChar GetAD();
-    QString GetData();
-    QChar GetCBE();
-    QString GetControl_Byte();
-    QChar GetIRDY();
-    QChar GetTRDY();
-    QChar GetDEVSEL();
-    QChar GetClk(int ClockEdge);
-    QChar GetReset();
-    void SetClock(int NumberOfCycles);
-
 
 };
 

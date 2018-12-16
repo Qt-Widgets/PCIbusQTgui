@@ -9,7 +9,7 @@ class DEVICE
 
 public:
     //constructor
-    DEVICE();
+    DEVICE(QString);
 
     void setREQ(QChar forceREQ);
     QString getREQ();
@@ -19,9 +19,13 @@ public:
 
 
     void SetMemoryByte(QString data,int rowIndex, int ByteIndex);
+    void SetMemoryWord(QString data,int rowIndex);
     QString GetMemoryByte(int rowIndex, int ByteIndex);
+    QString GetMemoryWord(int rowIndex);
+    QString GetDeviceName();
 
 private:
+    QString Name;
     QString REQ;
     QString GNT;
     QVector< QVector< QString > > DeviceMemory;
