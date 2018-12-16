@@ -7,7 +7,7 @@
 QT       += core gui
 QT       += charts
 
-
+QT       += widgets
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = PCIsimulator
@@ -31,7 +31,8 @@ SOURCES += \
     callout.cpp \
     view.cpp \
     device.cpp \
-    pci.cpp
+    pci.cpp \
+    subwindow.cpp
 
 
 HEADERS += \
@@ -39,9 +40,11 @@ HEADERS += \
     callout.h \
     view.h \
     device.h \
-    pci.h
+    pci.h \
+    subwindow.h
 
 
 FORMS += \
         mainwindow.ui \
+    subwindow.ui
 

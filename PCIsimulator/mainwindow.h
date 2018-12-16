@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "view.h"
-
+#include "subwindow.h"
 namespace Ui {
 class MainWindow;
 }
@@ -21,10 +21,18 @@ private slots:
 
     void on_DevA_InitiatorRadio_toggled(bool checked);
 
+    void on_DevA_spinBox_editingFinished();
+
+    void on_DevB_spinBox_editingFinished();
+
+    void on_DevC_spinBox_editingFinished();
+
+    void on_DevD_spinBox_editingFinished();
+
 private:
     Ui::MainWindow *ui;
     View * Graph;
-
+    subWindow *SubWindow;
 };
 
 #endif // MAINWINDOW_H

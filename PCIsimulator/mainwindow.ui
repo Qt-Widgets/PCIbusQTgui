@@ -1567,13 +1567,13 @@
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_8"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_6"/>
   <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_4"/>
-  <buttongroup name="buttonGroup_5"/>
-  <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_7"/>
-  <buttongroup name="buttonGroup_8"/>
  </buttongroups>
 </ui>
