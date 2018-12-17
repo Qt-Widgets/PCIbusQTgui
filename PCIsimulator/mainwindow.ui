@@ -31,6 +31,11 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="DeviceA">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>DEVICE A</string>
          </property>
@@ -41,8 +46,13 @@
        </item>
        <item>
         <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Mastr Select</string>
+          <string>Master Select</string>
          </property>
         </widget>
        </item>
@@ -65,63 +75,6 @@
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_12">
-         <property name="text">
-          <string>Target Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="DevA_comboBox">
-         <item>
-          <property name="text">
-           <string>DEVICE B</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE C</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE D</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_13">
-         <property name="text">
-          <string>Control Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QRadioButton" name="DevA_ReadRadio">
-           <property name="text">
-            <string>Read</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_3</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="DevA_WriteRadio">
-           <property name="text">
-            <string>Write</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_3</string>
            </attribute>
           </widget>
          </item>
@@ -158,7 +111,7 @@
             <x>0</x>
             <y>0</y>
             <width>301</width>
-            <height>294</height>
+            <height>377</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout">
@@ -405,7 +358,12 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QLabel" name="DeviceA_2">
+        <widget class="QLabel" name="DeviceB">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>DEVICE B</string>
          </property>
@@ -416,8 +374,13 @@
        </item>
        <item>
         <widget class="QLabel" name="label_17">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Mastr Select</string>
+          <string>Master Select</string>
          </property>
         </widget>
        </item>
@@ -440,63 +403,6 @@
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup_2</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_18">
-         <property name="text">
-          <string>Target Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="DevB_comboBox">
-         <item>
-          <property name="text">
-           <string>DEVICE A</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE C</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE D</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_19">
-         <property name="text">
-          <string>Control Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_15">
-         <item>
-          <widget class="QRadioButton" name="DevB_ReadRadio">
-           <property name="text">
-            <string>Read</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_4</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="DevB_WriteRadio">
-           <property name="text">
-            <string>Write</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_4</string>
            </attribute>
           </widget>
          </item>
@@ -533,7 +439,7 @@
             <x>0</x>
             <y>0</y>
             <width>301</width>
-            <height>294</height>
+            <height>377</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
@@ -780,7 +686,12 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
-        <widget class="QLabel" name="DeviceA_3">
+        <widget class="QLabel" name="DeviceC">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>DEVICE C</string>
          </property>
@@ -791,8 +702,13 @@
        </item>
        <item>
         <widget class="QLabel" name="label_33">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Mastr Select</string>
+          <string>Master Select</string>
          </property>
         </widget>
        </item>
@@ -815,63 +731,6 @@
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup_5</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_34">
-         <property name="text">
-          <string>Target Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="DevC_comboBox">
-         <item>
-          <property name="text">
-           <string>DEVICE A</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE B</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE D</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_35">
-         <property name="text">
-          <string>Control Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_28">
-         <item>
-          <widget class="QRadioButton" name="DevC_ReadRadio">
-           <property name="text">
-            <string>Read</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_6</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="DevC_WriteRadio">
-           <property name="text">
-            <string>Write</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_6</string>
            </attribute>
           </widget>
          </item>
@@ -908,7 +767,7 @@
             <x>0</x>
             <y>0</y>
             <width>302</width>
-            <height>294</height>
+            <height>377</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -1155,7 +1014,12 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_7">
        <item>
-        <widget class="QLabel" name="DeviceA_4">
+        <widget class="QLabel" name="DeviceD">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>DEVICE D</string>
          </property>
@@ -1166,8 +1030,13 @@
        </item>
        <item>
         <widget class="QLabel" name="label_49">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Mastr Select</string>
+          <string>Master Select</string>
          </property>
         </widget>
        </item>
@@ -1190,63 +1059,6 @@
            </property>
            <attribute name="buttonGroup">
             <string notr="true">buttonGroup_7</string>
-           </attribute>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_50">
-         <property name="text">
-          <string>Target Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="DevD_comboBox">
-         <item>
-          <property name="text">
-           <string>DEVICE A</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE B</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>DEVICE C</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_51">
-         <property name="text">
-          <string>Control Select</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_41">
-         <item>
-          <widget class="QRadioButton" name="DevD_ReadRadio">
-           <property name="text">
-            <string>Read</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_8</string>
-           </attribute>
-          </widget>
-         </item>
-         <item>
-          <widget class="QRadioButton" name="DevD_WriteRadio">
-           <property name="text">
-            <string>Write</string>
-           </property>
-           <attribute name="buttonGroup">
-            <string notr="true">buttonGroup_8</string>
            </attribute>
           </widget>
          </item>
@@ -1283,7 +1095,7 @@
             <x>0</x>
             <y>0</y>
             <width>301</width>
-            <height>294</height>
+            <height>377</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
@@ -1568,12 +1380,12 @@
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_3"/>
-  <buttongroup name="buttonGroup_4"/>
   <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_7"/>
   <buttongroup name="buttonGroup_8"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_4"/>
  </buttongroups>
 </ui>

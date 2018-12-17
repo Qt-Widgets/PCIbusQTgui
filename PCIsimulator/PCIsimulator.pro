@@ -32,7 +32,8 @@ SOURCES += \
     view.cpp \
     device.cpp \
     pci.cpp \
-    subwindow.cpp
+    subwindow.cpp \
+    device_signals.cpp
 
 
 HEADERS += \
@@ -41,7 +42,8 @@ HEADERS += \
     view.h \
     device.h \
     pci.h \
-    subwindow.h
+    subwindow.h \
+    device_signals.h
 
 
 FORMS += \

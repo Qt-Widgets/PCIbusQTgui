@@ -6,6 +6,9 @@
 #include "pci.h"
 #include "device.h"
 #include "subwindow.h"
+#include "device_signals.h"
+
+extern Device_Signals DevA;
 
 namespace Ui {
 class MainWindow;
@@ -18,6 +21,9 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+
+
 
 private slots:
     void on_pushButton_clicked();
@@ -33,6 +39,9 @@ private slots:
     void on_DevD_spinBox_editingFinished();
 
 
+    void on_DevA_InitiatorRadio_clicked();
+
+
 private:
     Ui::MainWindow *ui;
     View * Graph;
@@ -44,6 +53,7 @@ private:
     DEVICE *DeviceC;
     DEVICE *DeviceD;
     subWindow *SubWindow;
+
 
 
 };

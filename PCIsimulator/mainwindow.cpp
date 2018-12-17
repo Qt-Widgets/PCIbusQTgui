@@ -4,7 +4,9 @@
 #include "device.h"
 #include "pci.h"
 #include <subwindow.h>
+#include"device_signals.h"
 #include <QDebug>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -244,36 +246,61 @@ void MainWindow::WriteTransaction(DEVICE *Initiator, DEVICE *Target, int numberO
 
 void MainWindow::on_DevA_spinBox_editingFinished()
 {
-    SubWindow = new subWindow(this,ui->DevA_spinBox->value());
+    SubWindow = new subWindow(this,ui->DevA_spinBox->value(),"DEVICE A");
     SubWindow->setModal(true);
+    SubWindow->setWindowTitle("DEVICE A");
     if(ui->DevA_spinBox->value() != 0){
-    SubWindow->exec();
+
+        DevA.set_numOfTrans(QString::number(ui->DevA_spinBox->value()));
+
+        ui->DevA_spinBox->blockSignals(true);
+         ui->DevA_spinBox->setEnabled(false);
+         SubWindow->exec();
+         ui->DevA_spinBox->blockSignals(false);
     }
 }
 
 void MainWindow::on_DevB_spinBox_editingFinished()
 {
-    SubWindow = new subWindow(this,ui->DevB_spinBox->value());
+    SubWindow = new subWindow(this,ui->DevB_spinBox->value(),"DEVICE B");
     SubWindow->setModal(true);
+    SubWindow->setWindowTitle("DEVICE B");
     if(ui->DevB_spinBox->value() != 0){
-    SubWindow->exec();
+        ui->DevB_spinBox->blockSignals(true);
+        ui->DevB_spinBox->setEnabled(false);
+        SubWindow->exec();
+        ui->DevB_spinBox->blockSignals(false);
     }
 }
 
 void MainWindow::on_DevC_spinBox_editingFinished()
 {
-    SubWindow = new subWindow(this,ui->DevC_spinBox->value());
+    SubWindow = new subWindow(this,ui->DevC_spinBox->value(),"DEVICE C");
     SubWindow->setModal(true);
+    SubWindow->setWindowTitle("DEVICE C");
     if(ui->DevC_spinBox->value() != 0){
-    SubWindow->exec();
+        ui->DevC_spinBox->blockSignals(true);
+        ui->DevC_spinBox->setEnabled(false);
+        SubWindow->exec();
+        ui->DevC_spinBox->blockSignals(false);
     }
 }
 
 void MainWindow::on_DevD_spinBox_editingFinished()
 {
-    SubWindow = new subWindow(this,ui->DevD_spinBox->value());
+    SubWindow = new subWindow(this,ui->DevD_spinBox->value(),"");
     SubWindow->setModal(true);
+    SubWindow->setWindowTitle("DEVICE D");
     if(ui->DevD_spinBox->value() != 0){
-    SubWindow->exec();
+        ui->DevD_spinBox->blockSignals(true);
+        ui->DevD_spinBox->setEnabled(false);
+        SubWindow->exec();
+        ui->DevD_spinBox->blockSignals(false);
     }
+}
+
+void MainWindow::on_DevA_InitiatorRadio_clicked()
+{
+   DevA.set_masterSelect("A");
+
 }
