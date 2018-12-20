@@ -1,37 +1,45 @@
 #include "device_signals.h"
+#include"device.h"
 
 Device_Signals::Device_Signals()
 {
-    masterSelect=" ";
-    controlSelect=" ";
-    numOfTrans=" ";
-    targetSelect=" ";
-    numOfPhases= " ";
-    ByteEnable=" ";
+    targetSelect.resize(2);
+    controlSelect.resize(2);
+
 }
 
-void Device_Signals :: set_masterSelect(QString master){
-    masterSelect = master;
+
+void Device_Signals :: set_controlSelect(QString control,int transaction_no){
+    controlSelect[transaction_no] = control;
 }
-void Device_Signals :: set_controlSelect(QString control){
-    controlSelect = control;
+void Device_Signals :: set_targetSelect(DEVICE *target, int transaction_no){
+    targetSelect[transaction_no]=target;
 }
-void Device_Signals :: set_numOfTrans(QString number){
-    numOfTrans = number;
+void Device_Signals :: set_numOfTrans(int numOfTrans){
+    DataPhases_ByteEnable.resize(numOfTrans);
 }
-void Device_Signals :: set_targetSelect(QString target){
-    targetSelect = target;
+void Device_Signals :: set_numOfPhases(int transaction_no, int numOfPhases){
+
+    DataPhases_ByteEnable[transaction_no].resize(numOfPhases);
 }
-void Device_Signals :: set_numOfPhases(QString number){
-    numOfPhases = number;
+void Device_Signals ::set_ByteEnable(int transaction_no , int DataPhase_no , char byte_no){
+    DataPhases_ByteEnable[transaction_no][DataPhase_no] += byte_no;
 }
-void Device_Signals :: set_ByteEnable(QString byte_no){
-    ByteEnable = byte_no;
+
+QVector<QString> Device_Signals :: get_controlSelect(){
+    return controlSelect;
 }
-QString Device_Signals ::  get_masterSelect(){return masterSelect;}
-QString Device_Signals :: get_controlSelect(){return controlSelect;}
-QString Device_Signals :: get_numOfTrans(){return numOfTrans;}
-QString Device_Signals :: get_targetSelect(){return targetSelect;}
-QString Device_Signals :: get_numOfPhases(){return numOfPhases;}
-QString Device_Signals :: get_ByteEnable(){return ByteEnable;}
+QVector <DEVICE*> Device_Signals :: get_targetSelect(){
+    return targetSelect;
+}
+int Device_Signals :: get_numOfTrans(){
+    return DataPhases_ByteEnable.size();
+}
+int Device_Signals :: get_numOfPhases(int transaction_no){
+    return DataPhases_ByteEnable[transaction_no].size();
+}
+QString Device_Signals :: get_ByteEnable(int transaction_no , int DataPhase_no)
+{
+    return DataPhases_ByteEnable[transaction_no][DataPhase_no];
+}
 

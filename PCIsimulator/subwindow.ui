@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>823</width>
-    <height>427</height>
+    <height>533</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>430</x>
      <y>10</y>
      <width>181</width>
-     <height>341</height>
+     <height>352</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -121,16 +121,23 @@
      </widget>
     </item>
     <item>
-     <widget class="QCheckBox" name="Trans3_Byte4">
+     <widget class="QCheckBox" name="Trans3_Byte3">
       <property name="text">
        <string>Byte 3</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QCheckBox" name="Trans3_Byte4_2">
+     <widget class="QCheckBox" name="Trans3_Byte4">
       <property name="text">
        <string>Byte 4</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Trans3_pushButton">
+      <property name="text">
+       <string>Confirm BE</string>
       </property>
      </widget>
     </item>
@@ -142,7 +149,7 @@
      <x>630</x>
      <y>10</y>
      <width>181</width>
-     <height>341</height>
+     <height>352</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -257,6 +264,13 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QPushButton" name="Trans4_pushButton">
+      <property name="text">
+       <string>Confirm BE</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="layoutWidget_4">
@@ -265,7 +279,7 @@
      <x>10</x>
      <y>10</y>
      <width>181</width>
-     <height>341</height>
+     <height>354</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -380,6 +394,13 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QPushButton" name="Trans1_pushButton">
+      <property name="text">
+       <string>Confirm BE</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="layoutWidget_5">
@@ -388,7 +409,7 @@
      <x>220</x>
      <y>10</y>
      <width>181</width>
-     <height>341</height>
+     <height>354</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -500,6 +521,13 @@
      <widget class="QCheckBox" name="Trans2_Byte4">
       <property name="text">
        <string>Byte 4</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Trans2_pushButton">
+      <property name="text">
+       <string>Confirm BE</string>
       </property>
      </widget>
     </item>

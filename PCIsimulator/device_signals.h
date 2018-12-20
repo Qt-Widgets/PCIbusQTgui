@@ -2,36 +2,36 @@
 #define DEVICE_SIGNALS_H
 
 #include "QString"
+#include "device.h"
 
 class Device_Signals
 {
 
 
 public:
+
     Device_Signals();
-    void set_masterSelect(QString master);
-    void set_controlSelect(QString control);
-    void set_numOfTrans(QString number);
-    void set_targetSelect(QString target);
-    void set_numOfPhases(QString number);
-    void set_ByteEnable(QString byte_no);
+
+    void set_controlSelect(QString control, int transaction_no);
+    void set_targetSelect(DEVICE *target,int transaction_no);
+    void set_numOfTrans(int numOfTrans);
+    void set_numOfPhases(int transaction_no, int numOfPhases);
+    void set_ByteEnable(int transaction_no , int DataPhase_no , char byte_no);
 
 
-    QString get_masterSelect();
-    QString get_controlSelect();
-    QString get_numOfTrans();
-    QString get_targetSelect();
-    QString get_numOfPhases();
-    QString get_ByteEnable();
+
+    QVector <QString> get_controlSelect();
+    QVector <DEVICE*> get_targetSelect();
+    int get_numOfTrans();
+    int get_numOfPhases(int transaction_no);
+    QString get_ByteEnable(int transaction_no , int DataPhase_no);
 
 private:
     //variables to save values chosen by the user
-    QString masterSelect ;
-    QString controlSelect;
-    QString numOfTrans;
-    QString targetSelect;
-    QString numOfPhases;
-    QString ByteEnable;
+
+    QVector <QString> controlSelect;
+    QVector <DEVICE*> targetSelect;
+    QVector< QVector< QString > > DataPhases_ByteEnable;
 };
 
 #endif // DEVICE_SIGNALS_H

@@ -115,235 +115,104 @@
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout">
-           <item row="0" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout">
+           <item row="1" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <widget class="QComboBox" name="DevA_RowIndex">
                <item>
-                <widget class="QLabel" name="label_9">
-                 <property name="text">
-                  <string>row1</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Row 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row1Byte4"/>
+                <property name="text">
+                 <string>Row 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row1Byte3"/>
+                <property name="text">
+                 <string>Row 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row1Byte2"/>
+                <property name="text">
+                 <string>Row 4</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row1Byte1"/>
+                <property name="text">
+                 <string>Row 5</string>
+                </property>
                </item>
-              </layout>
+               <item>
+                <property name="text">
+                 <string>Row 6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 10</string>
+                </property>
+               </item>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <widget class="QComboBox" name="DevA_ByteIndex">
                <item>
-                <widget class="QLabel" name="label_10">
-                 <property name="text">
-                  <string>row2</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Select Byte</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row2Byte4"/>
+                <property name="text">
+                 <string>Byte 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row2Byte3"/>
+                <property name="text">
+                 <string>Byte 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row2Byte2"/>
+                <property name="text">
+                 <string>Byte 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row2Byte1"/>
+                <property name="text">
+                 <string>Byte 4</string>
+                </property>
                </item>
-              </layout>
+              </widget>
              </item>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QLabel" name="label">
-                 <property name="text">
-                  <string>row3</string>
-                 </property>
-                </widget>
+                <widget class="QLineEdit" name="DevA_Byte4"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row3Byte4"/>
+                <widget class="QLineEdit" name="DevA_Byte3"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row3Byte3"/>
+                <widget class="QLineEdit" name="DevA_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Row3Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row3Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_5">
-               <item>
-                <widget class="QLabel" name="label_2">
-                 <property name="text">
-                  <string>row4</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row4Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row4Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row4Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row4Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="label_3">
-                 <property name="text">
-                  <string>row5</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row5Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row5Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row5Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row5Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_7">
-               <item>
-                <widget class="QLabel" name="label_4">
-                 <property name="text">
-                  <string>row6</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row6Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row6Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row6Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row6Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_8">
-               <item>
-                <widget class="QLabel" name="label_5">
-                 <property name="text">
-                  <string>row7</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row7Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row7Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row7Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row7Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_9">
-               <item>
-                <widget class="QLabel" name="label_6">
-                 <property name="text">
-                  <string>row8</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row8Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row8Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row8Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row8Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_10">
-               <item>
-                <widget class="QLabel" name="label_7">
-                 <property name="text">
-                  <string>row9</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row9Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row9Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row9Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row9Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_11">
-               <item>
-                <widget class="QLabel" name="label_8">
-                 <property name="text">
-                  <string>row10</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row10Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row10Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row10Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Row10Byte1"/>
+                <widget class="QLineEdit" name="DevA_Byte1"/>
                </item>
               </layout>
              </item>
@@ -433,7 +302,7 @@
          <property name="widgetResizable">
           <bool>true</bool>
          </property>
-         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <widget class="QWidget" name="scrollAreaWidgetContents_5">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -442,236 +311,105 @@
             <height>377</height>
            </rect>
           </property>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="1">
-            <layout class="QVBoxLayout" name="verticalLayout_9">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_8">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_54">
+              <widget class="QComboBox" name="DevB_RowIndex">
                <item>
-                <widget class="QLabel" name="label_31">
-                 <property name="text">
-                  <string>row1</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Row 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row1Byte4"/>
+                <property name="text">
+                 <string>Row 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row1Byte3"/>
+                <property name="text">
+                 <string>Row 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row1Byte2"/>
+                <property name="text">
+                 <string>Row 4</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row1Byte1"/>
+                <property name="text">
+                 <string>Row 5</string>
+                </property>
                </item>
-              </layout>
+               <item>
+                <property name="text">
+                 <string>Row 6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 10</string>
+                </property>
+               </item>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_55">
+              <widget class="QComboBox" name="DevB_ByteIndex">
                <item>
-                <widget class="QLabel" name="label_32">
-                 <property name="text">
-                  <string>row2</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Select Byte</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row2Byte4"/>
+                <property name="text">
+                 <string>Byte 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row2Byte3"/>
+                <property name="text">
+                 <string>Byte 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row2Byte2"/>
+                <property name="text">
+                 <string>Byte 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row2Byte1"/>
+                <property name="text">
+                 <string>Byte 4</string>
+                </property>
                </item>
-              </layout>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_56">
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QLabel" name="label_36">
-                 <property name="text">
-                  <string>row3</string>
-                 </property>
-                </widget>
+                <widget class="QLineEdit" name="DevB_Byte4"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row3Byte4"/>
+                <widget class="QLineEdit" name="DevB_Byte3"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row3Byte3"/>
+                <widget class="QLineEdit" name="DevB_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Row3Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row3Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_57">
-               <item>
-                <widget class="QLabel" name="label_52">
-                 <property name="text">
-                  <string>row4</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row4Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row4Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row4Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row4Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_58">
-               <item>
-                <widget class="QLabel" name="label_65">
-                 <property name="text">
-                  <string>row5</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row5Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row5Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row5Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row5Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_59">
-               <item>
-                <widget class="QLabel" name="label_66">
-                 <property name="text">
-                  <string>row6</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row6Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row6Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row6Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row6Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_60">
-               <item>
-                <widget class="QLabel" name="label_67">
-                 <property name="text">
-                  <string>row7</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row7Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row7Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row7Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row7Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_61">
-               <item>
-                <widget class="QLabel" name="label_68">
-                 <property name="text">
-                  <string>row8</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row8Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row8Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row8Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row8Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_62">
-               <item>
-                <widget class="QLabel" name="label_69">
-                 <property name="text">
-                  <string>row9</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row9Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row9Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row9Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row9Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_63">
-               <item>
-                <widget class="QLabel" name="label_70">
-                 <property name="text">
-                  <string>row10</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row10Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row10Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row10Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Row10Byte1"/>
+                <widget class="QLineEdit" name="DevB_Byte1"/>
                </item>
               </layout>
              </item>
@@ -772,234 +510,103 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout_6">
+            <layout class="QVBoxLayout" name="verticalLayout_9">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_30">
+              <widget class="QComboBox" name="DevC_RowIndex">
                <item>
-                <widget class="QLabel" name="label_39">
-                 <property name="text">
-                  <string>row1</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Row 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row1Byte4"/>
+                <property name="text">
+                 <string>Row 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row1Byte3"/>
+                <property name="text">
+                 <string>Row 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row1Byte2"/>
+                <property name="text">
+                 <string>Row 4</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row1Byte1"/>
+                <property name="text">
+                 <string>Row 5</string>
+                </property>
                </item>
-              </layout>
+               <item>
+                <property name="text">
+                 <string>Row 6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 10</string>
+                </property>
+               </item>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_31">
+              <widget class="QComboBox" name="DevC_ByteIndex">
                <item>
-                <widget class="QLabel" name="label_40">
-                 <property name="text">
-                  <string>row2</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Select Byte</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row2Byte4"/>
+                <property name="text">
+                 <string>Byte 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row2Byte3"/>
+                <property name="text">
+                 <string>Byte 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row2Byte2"/>
+                <property name="text">
+                 <string>Byte 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row2Byte1"/>
+                <property name="text">
+                 <string>Byte 4</string>
+                </property>
                </item>
-              </layout>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_32">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
                <item>
-                <widget class="QLabel" name="label_41">
-                 <property name="text">
-                  <string>row3</string>
-                 </property>
-                </widget>
+                <widget class="QLineEdit" name="DevC_Byte4"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row3Byte4"/>
+                <widget class="QLineEdit" name="DevC_Byte3"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row3Byte3"/>
+                <widget class="QLineEdit" name="DevC_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Row3Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row3Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_33">
-               <item>
-                <widget class="QLabel" name="label_42">
-                 <property name="text">
-                  <string>row4</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row4Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row4Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row4Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row4Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_34">
-               <item>
-                <widget class="QLabel" name="label_43">
-                 <property name="text">
-                  <string>row5</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row5Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row5Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row5Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row5Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_35">
-               <item>
-                <widget class="QLabel" name="label_44">
-                 <property name="text">
-                  <string>row6</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row6Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row6Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row6Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row6Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_36">
-               <item>
-                <widget class="QLabel" name="label_45">
-                 <property name="text">
-                  <string>row7</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row7Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row7Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row7Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row7Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_37">
-               <item>
-                <widget class="QLabel" name="label_46">
-                 <property name="text">
-                  <string>row8</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row8Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row8Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row8Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row8Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_38">
-               <item>
-                <widget class="QLabel" name="label_47">
-                 <property name="text">
-                  <string>row9</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row9Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row9Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row9Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row9Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_39">
-               <item>
-                <widget class="QLabel" name="label_48">
-                 <property name="text">
-                  <string>row10</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row10Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row10Byte3"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row10Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Row10Byte1"/>
+                <widget class="QLineEdit" name="DevC_Byte1"/>
                </item>
               </layout>
              </item>
@@ -1100,234 +707,103 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="0" column="0">
-            <layout class="QVBoxLayout" name="verticalLayout_8">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_43">
+              <widget class="QComboBox" name="DevD_RowIndex">
                <item>
-                <widget class="QLabel" name="label_55">
-                 <property name="text">
-                  <string>row1</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Row 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_171"/>
+                <property name="text">
+                 <string>Row 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_172"/>
+                <property name="text">
+                 <string>Row 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row1Byte2"/>
+                <property name="text">
+                 <string>Row 4</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row1Byte1"/>
+                <property name="text">
+                 <string>Row 5</string>
+                </property>
                </item>
-              </layout>
+               <item>
+                <property name="text">
+                 <string>Row 6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Row 10</string>
+                </property>
+               </item>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_44">
+              <widget class="QComboBox" name="DevD_ByteIndex">
                <item>
-                <widget class="QLabel" name="label_56">
-                 <property name="text">
-                  <string>row2</string>
-                 </property>
-                </widget>
+                <property name="text">
+                 <string>Select Byte</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_174"/>
+                <property name="text">
+                 <string>Byte 1</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_175"/>
+                <property name="text">
+                 <string>Byte 2</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row2Byte2"/>
+                <property name="text">
+                 <string>Byte 3</string>
+                </property>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row2Byte1"/>
+                <property name="text">
+                 <string>Byte 4</string>
+                </property>
                </item>
-              </layout>
+              </widget>
              </item>
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_45">
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
                <item>
-                <widget class="QLabel" name="label_57">
-                 <property name="text">
-                  <string>row3</string>
-                 </property>
-                </widget>
+                <widget class="QLineEdit" name="DevD_Byte4"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_177"/>
+                <widget class="QLineEdit" name="DevD_Byte3"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_178"/>
+                <widget class="QLineEdit" name="DevD_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Row3Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row3Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_46">
-               <item>
-                <widget class="QLabel" name="label_58">
-                 <property name="text">
-                  <string>row4</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_180"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_181"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row4Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row4Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_47">
-               <item>
-                <widget class="QLabel" name="label_59">
-                 <property name="text">
-                  <string>row5</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_184"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_185"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row5Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row5Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_48">
-               <item>
-                <widget class="QLabel" name="label_60">
-                 <property name="text">
-                  <string>row6</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_188"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_189"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row6Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row6Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_49">
-               <item>
-                <widget class="QLabel" name="label_61">
-                 <property name="text">
-                  <string>row7</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_34"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_35"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row7Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row7Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_50">
-               <item>
-                <widget class="QLabel" name="label_62">
-                 <property name="text">
-                  <string>row8</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_192"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_193"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row8Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row8Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_51">
-               <item>
-                <widget class="QLabel" name="label_63">
-                 <property name="text">
-                  <string>row9</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_195"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_196"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row9Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row9Byte1"/>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_52">
-               <item>
-                <widget class="QLabel" name="label_64">
-                 <property name="text">
-                  <string>row10</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_198"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="lineEdit_199"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row10Byte2"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Row10Byte1"/>
+                <widget class="QLineEdit" name="DevD_Byte1"/>
                </item>
               </layout>
              </item>
@@ -1344,8 +820,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>600</y>
+      <x>780</x>
+      <y>570</y>
       <width>75</width>
       <height>41</height>
      </rect>
@@ -1353,6 +829,86 @@
     <property name="text">
      <string>DrawGraph</string>
     </property>
+   </widget>
+   <widget class="QPushButton" name="Submit">
+    <property name="geometry">
+     <rect>
+      <x>504</x>
+      <y>580</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submit Delay</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>580</y>
+      <width>95</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Delay</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="Delay">
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>160</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_12">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Arbiter Mode </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>First Come First Serve</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Priority</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -1379,13 +935,9 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
-  <buttongroup name="buttonGroup_5"/>
   <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_6"/>
-  <buttongroup name="buttonGroup_8"/>
-  <buttongroup name="buttonGroup_3"/>
   <buttongroup name="buttonGroup_7"/>
-  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>
