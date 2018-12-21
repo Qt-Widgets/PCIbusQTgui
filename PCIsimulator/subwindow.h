@@ -64,6 +64,8 @@ private slots:
     void on_Trans1_Spinbox_editingFinished();
     void on_Trans2_Spinbox_editingFinished();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::subWindow *ui;
 

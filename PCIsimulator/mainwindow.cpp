@@ -549,15 +549,14 @@ void MainWindow::on_Submit_clicked(bool checked)
                 DeviceD->SetMemoryByte(ui->DevD_Byte1->text(),i,0);
             else if(ui->DevD_ByteIndex->currentIndex() == 2)
                 DeviceD->SetMemoryByte(ui->DevD_Byte2->text(),i,1);
-            else if(ui->DevA_ByteIndex->currentIndex() == 3)
+            else if(ui->DevD_ByteIndex->currentIndex() == 3)
                 DeviceD->SetMemoryByte(ui->DevD_Byte3->text(),i,2);
-            else if(ui->DevA_ByteIndex->currentIndex() == 4)
+            else if(ui->DevD_ByteIndex->currentIndex() == 4)
                 DeviceD->SetMemoryByte(ui->DevD_Byte4->text(),i,3);
         }
     }
 
 }
-
 
 
 void MainWindow::on_DevA_RowIndex_currentIndexChanged(const QString &arg1)

@@ -30,6 +30,7 @@ private slots:
     void ReadTransaction(DEVICE *A,DEVICE *B,int numberOfTransfers);
     void WriteTransaction(DEVICE *A,DEVICE *B,int numberOfTransfers,QVector<int> ByteEnable);
 
+    //when no of transaction is determined ... the sub window opens
     void on_DevA_spinBox_editingFinished();
 
     void on_DevB_spinBox_editingFinished();
@@ -41,7 +42,7 @@ private slots:
 
 
 
-
+    //when data of line edit input is changed .. this byte in device memory will be changed to that value
     void on_DevA_ByteIndex_currentTextChanged(const QString &arg1);
 
     void on_DevB_ByteIndex_currentTextChanged(const QString &arg1);
@@ -50,10 +51,11 @@ private slots:
 
     void on_DevD_ByteIndex_currentTextChanged(const QString &arg1);
 
+    //this for submit delay button .. when you press this button : delay will be stored in vector of delays , and memory will be updated
     void on_Submit_clicked(bool checked);
 
 
-
+    // to show what is stored in memory in each row
     void on_DevA_RowIndex_currentIndexChanged(const QString &arg1);
 
     void on_DevB_RowIndex_currentIndexChanged(const QString &arg1);

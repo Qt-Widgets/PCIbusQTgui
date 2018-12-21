@@ -5,6 +5,9 @@
 #include <QPushButton>
 #include<QMessageBox>
 #include"device_signals.h"
+
+QVector <int> confirm_checks = {0,0};
+int numberOfTrans;
 subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
                      Device_Signals *devA_main,Device_Signals *devB_main,Device_Signals *devC_main,Device_Signals *devD_main,
                      DEVICE *A,DEVICE *B, DEVICE *C,DEVICE *D) :
@@ -23,6 +26,9 @@ subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
     devB_sub= devB_main;
     devC_sub= devC_main;
     devD_sub= devD_main;
+
+    numberOfTrans = num_Trans;
+
 
     if(num_Trans < 4)
     {
@@ -212,6 +218,9 @@ void subWindow::on_Trans1_Spinbox_editingFinished()
         {
            ui->Trans1_comboBox->addItem("Data Phase" + QString::number(i));
         }
+
+        confirm_checks[0] = ui->Trans1_Spinbox->value();
+
         ui->Trans1_Spinbox->blockSignals(false);
 
         if(subWindow::windowTitle() == "DEVICE A"){
@@ -245,6 +254,8 @@ void subWindow::on_Trans2_Spinbox_editingFinished()
         {
            ui->Trans2_comboBox->addItem("Data Phase" + QString::number(i));
         }
+
+        confirm_checks[1] = ui->Trans2_Spinbox->value();
         ui->Trans2_Spinbox->blockSignals(false);
 
         if(subWindow::windowTitle() == "DEVICE A"){
@@ -446,6 +457,7 @@ void subWindow::on_Trans2_WriteRadio_clicked(bool checked)
 
 void subWindow::on_Trans1_pushButton_clicked()
 {
+    confirm_checks[0]--;
     if(subWindow::windowTitle() == "DEVICE A"){
         for(int i=0 ; i<ui->Trans1_Spinbox->value();i++){
 
@@ -518,7 +530,7 @@ void subWindow::on_Trans1_pushButton_clicked()
 
 void subWindow::on_Trans2_pushButton_clicked(bool checked)
 {
-
+    confirm_checks[1]--;
     if(subWindow::windowTitle() == "DEVICE A"){
         for(int i=0 ; i<ui->Trans2_Spinbox->value();i++){
 
@@ -595,3 +607,48 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
 
 
+
+void subWindow::on_pushButton_clicked()
+{
+    int error=0;
+
+    if(ui->Trans1_Target->currentText() == "Select Target"){
+        QMessageBox::warning(this,"Error","You forgot to select target of first transaction");
+        error=1;
+    }
+
+    if(!(ui->Trans1_ReadRadio->isChecked()) && !(ui->Trans1_WriteRadio->isChecked()) ){
+        QMessageBox::warning(this,"Error","You forgot to select control of first transaction");
+        error=1;
+    }
+    if(ui->Trans1_Spinbox->value() == 0){
+        QMessageBox::warning(this,"Error","You forgot to enter number of data phases of first transaction");
+        error=1;
+    }
+    if(confirm_checks[0]>0){
+        QMessageBox::warning(this,"Error","You forgot to enter byte enable of a data phase");
+        error=1;
+    }
+    if(numberOfTrans==2){
+        if(ui->Trans2_Target->currentText() == "Select Target"){
+            QMessageBox::warning(this,"Error","You forgot to select target of Second transaction");
+            error=1;
+        }
+
+        if(!(ui->Trans2_ReadRadio->isChecked()) && !(ui->Trans2_WriteRadio->isChecked()) ){
+            QMessageBox::warning(this,"Error","You forgot to select control of Second transaction");
+            error=1;
+        }
+        if(ui->Trans2_Spinbox->value() == 0){
+            QMessageBox::warning(this,"Error","You forgot to enter number of data phases of Second transaction");
+            error=1;
+        }
+        if(confirm_checks[1]>0){
+            QMessageBox::warning(this,"Error","You forgot to enter byte enable of a data phase");
+            error=1;
+        }
+    }
+
+    if(error==0)
+        this->close();
+}
