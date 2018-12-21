@@ -16,7 +16,7 @@ public:
     void set_targetSelect(DEVICE *target,int transaction_no);
     void set_numOfTrans(int numOfTrans);
     void set_numOfPhases(int transaction_no, int numOfPhases);
-    void set_ByteEnable(int transaction_no , int DataPhase_no , char byte_no);
+    void set_ByteEnable(int transaction_no , int DataPhase_no , QString byte_no);
 
 
 

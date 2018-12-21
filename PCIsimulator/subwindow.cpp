@@ -458,18 +458,27 @@ void subWindow::on_Trans2_WriteRadio_clicked(bool checked)
 void subWindow::on_Trans1_pushButton_clicked()
 {
     confirm_checks[0]--;
+
+    QString word = "";
+
     if(subWindow::windowTitle() == "DEVICE A"){
         for(int i=0 ; i<ui->Trans1_Spinbox->value();i++){
 
             if( ui->Trans1_comboBox->currentIndex() == i){
                 if(ui->Trans1_Byte1->isChecked())
-                    devA_sub->set_ByteEnable(0,i,'1');
+                    word +='1';
+                    //devA_sub->set_ByteEnable(0,i,'1');
                 if(ui->Trans1_Byte2->isChecked())
-                    devA_sub->set_ByteEnable(0,i,'2');
+                    word +='2';
+
                 if(ui->Trans1_Byte3->isChecked())
-                    devA_sub->set_ByteEnable(0,i,'3');
+                    word +='3';
+
                 if(ui->Trans1_Byte4->isChecked())
-                    devA_sub->set_ByteEnable(0,i,'4');
+                    word +='4';
+
+                devA_sub->set_ByteEnable(0,i,word);
+
             }
         }
 
@@ -481,13 +490,16 @@ void subWindow::on_Trans1_pushButton_clicked()
 
             if( ui->Trans1_comboBox->currentIndex() == i){
                 if(ui->Trans1_Byte1->isChecked())
-                    devB_sub->set_ByteEnable(0,i,'1');
+                    word +='1';
+                    //devB_sub->set_ByteEnable(0,i,'1');
                 if(ui->Trans1_Byte2->isChecked())
-                    devB_sub->set_ByteEnable(0,i,'2');
+                    word +='2';
                 if(ui->Trans1_Byte3->isChecked())
-                    devB_sub->set_ByteEnable(0,i,'3');
+                    word +='3';
                 if(ui->Trans1_Byte4->isChecked())
-                    devB_sub->set_ByteEnable(0,i,'4');
+                    word +='4';
+
+                devB_sub->set_ByteEnable(0,i,word);
             }
         }
 
@@ -498,13 +510,16 @@ void subWindow::on_Trans1_pushButton_clicked()
 
             if( ui->Trans1_comboBox->currentIndex() == i){
                 if(ui->Trans1_Byte1->isChecked())
-                    devC_sub->set_ByteEnable(0,i,'1');
+                    word +='1';
+                    //devC_sub->set_ByteEnable(0,i,'1');
                 if(ui->Trans1_Byte2->isChecked())
-                    devC_sub->set_ByteEnable(0,i,'2');
+                    word +='2';
                 if(ui->Trans1_Byte3->isChecked())
-                    devC_sub->set_ByteEnable(0,i,'3');
+                    word +='3';
                 if(ui->Trans1_Byte4->isChecked())
-                    devC_sub->set_ByteEnable(0,i,'4');
+                    word +='4';
+
+                devC_sub->set_ByteEnable(0,i,word);
             }
         }
 
@@ -515,34 +530,45 @@ void subWindow::on_Trans1_pushButton_clicked()
 
             if( ui->Trans1_comboBox->currentIndex() == i){
                 if(ui->Trans1_Byte1->isChecked())
-                    devD_sub->set_ByteEnable(0,i,'1');
+                    //devD_sub->set_ByteEnable(0,i,'1');
+                    word +='1';
                 if(ui->Trans1_Byte2->isChecked())
-                    devD_sub->set_ByteEnable(0,i,'2');
+                    word +='2';
                 if(ui->Trans1_Byte3->isChecked())
-                    devD_sub->set_ByteEnable(0,i,'3');
+                    word +='3';
                 if(ui->Trans1_Byte4->isChecked())
-                    devD_sub->set_ByteEnable(0,i,'4');
+                    word +='4';
+
+                devD_sub->set_ByteEnable(0,i,word);
             }
         }
 
     }
+
+
 }
 
 void subWindow::on_Trans2_pushButton_clicked(bool checked)
 {
     confirm_checks[1]--;
+
+    QString word = "";
+
     if(subWindow::windowTitle() == "DEVICE A"){
         for(int i=0 ; i<ui->Trans2_Spinbox->value();i++){
 
             if( ui->Trans2_comboBox->currentIndex() == i){
                 if(ui->Trans2_Byte1->isChecked())
-                    devA_sub->set_ByteEnable(1,i,'1');
+                    //devA_sub->set_ByteEnable(1,i,'1');
+                    word +='1';
                 if(ui->Trans2_Byte2->isChecked())
-                    devA_sub->set_ByteEnable(1,i,'2');
+                    word +='2';
                 if(ui->Trans2_Byte3->isChecked())
-                    devA_sub->set_ByteEnable(1,i,'3');
+                    word +='3';
                 if(ui->Trans2_Byte4->isChecked())
-                    devA_sub->set_ByteEnable(1,i,'4');
+                    word +='4';
+
+                devA_sub->set_ByteEnable(1,i,word);
             }
         }
 
@@ -554,13 +580,16 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
             if( ui->Trans2_comboBox->currentIndex() == i){
                 if(ui->Trans2_Byte1->isChecked())
-                    devB_sub->set_ByteEnable(1,i,'1');
+                    //devB_sub->set_ByteEnable(1,i,'1');
+                    word +='1';
                 if(ui->Trans2_Byte2->isChecked())
-                    devB_sub->set_ByteEnable(1,i,'2');
+                    word +='2';
                 if(ui->Trans2_Byte3->isChecked())
-                    devB_sub->set_ByteEnable(1,i,'3');
+                    word +='3';
                 if(ui->Trans2_Byte4->isChecked())
-                    devB_sub->set_ByteEnable(1,i,'4');
+                    word +='4';
+
+                devB_sub->set_ByteEnable(1,i,word);
             }
         }
 
@@ -571,13 +600,16 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
             if( ui->Trans2_comboBox->currentIndex() == i){
                 if(ui->Trans2_Byte1->isChecked())
-                    devC_sub->set_ByteEnable(1,i,'1');
+                   // devC_sub->set_ByteEnable(1,i,'1');
+                    word +='1';
                 if(ui->Trans2_Byte2->isChecked())
-                    devC_sub->set_ByteEnable(1,i,'2');
+                    word +='2';
                 if(ui->Trans2_Byte3->isChecked())
-                    devC_sub->set_ByteEnable(1,i,'3');
+                    word +='3';
                 if(ui->Trans2_Byte4->isChecked())
-                    devC_sub->set_ByteEnable(1,i,'4');
+                    word +='4';
+
+                devC_sub->set_ByteEnable(1,i,word);
             }
         }
 
@@ -588,13 +620,16 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
             if( ui->Trans2_comboBox->currentIndex() == i){
                 if(ui->Trans2_Byte1->isChecked())
-                    devD_sub->set_ByteEnable(1,i,'1');
+                    //devD_sub->set_ByteEnable(1,i,'1');
+                    word += '1';
                 if(ui->Trans2_Byte2->isChecked())
-                    devD_sub->set_ByteEnable(1,i,'2');
+                    word += '2';
                 if(ui->Trans2_Byte3->isChecked())
-                    devD_sub->set_ByteEnable(1,i,'3');
+                    word += '3';
                 if(ui->Trans2_Byte4->isChecked())
-                    devD_sub->set_ByteEnable(1,i,'4');
+                    word += '4';
+
+                devD_sub->set_ByteEnable(1,i,word);
             }
         }
 

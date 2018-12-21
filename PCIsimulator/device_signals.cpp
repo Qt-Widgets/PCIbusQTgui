@@ -21,9 +21,14 @@ void Device_Signals :: set_numOfTrans(int numOfTrans){
 void Device_Signals :: set_numOfPhases(int transaction_no, int numOfPhases){
 
     DataPhases_ByteEnable[transaction_no].resize(numOfPhases);
+
+    for(int j=0;j<numOfPhases;j++){
+        DataPhases_ByteEnable[transaction_no][j]="1234";
+    }
+
 }
-void Device_Signals ::set_ByteEnable(int transaction_no , int DataPhase_no , char byte_no){
-    DataPhases_ByteEnable[transaction_no][DataPhase_no] += byte_no;
+void Device_Signals ::set_ByteEnable(int transaction_no , int DataPhase_no , QString byte_no){
+    DataPhases_ByteEnable[transaction_no][DataPhase_no] = byte_no;
 }
 
 QVector<QString> Device_Signals :: get_controlSelect(){
