@@ -545,7 +545,7 @@ void subWindow::on_Trans1_pushButton_clicked()
 
     }
 
-
+    QMessageBox::information(this,"Info","Byte Enable for this Data Phase stored Successfully");
 }
 
 void subWindow::on_Trans2_pushButton_clicked(bool checked)
@@ -634,6 +634,7 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
         }
 
     }
+    QMessageBox::information(this,"Info","Byte Enable for this Data Phase stored Successfully");
 }
 
 
@@ -643,7 +644,7 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
 
 
-void subWindow::on_pushButton_clicked()
+void subWindow::on_Apply_button_clicked()
 {
     int error=0;
 
@@ -687,3 +688,5 @@ void subWindow::on_pushButton_clicked()
     if(error==0)
         this->close();
 }
+
+
