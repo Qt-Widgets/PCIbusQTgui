@@ -90,7 +90,7 @@ subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
         else if (Dev_name == "DEVICE C"){
             ui->Trans1_Target->addItem("Select Target");
             ui->Trans1_Target->addItem("DEVICE A");
-            ui->Trans1_Target->addItem("DEVICE D");
+            ui->Trans1_Target->addItem("DEVICE B");
             ui->Trans1_Target->addItem("DEVICE D");
         }
         else if (Dev_name == "DEVICE D"){
@@ -117,7 +117,7 @@ subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
         else if (Dev_name == "DEVICE C"){
             ui->Trans2_Target->addItem("Select Target");
             ui->Trans2_Target->addItem("DEVICE A");
-            ui->Trans2_Target->addItem("DEVICE D");
+            ui->Trans2_Target->addItem("DEVICE B");
             ui->Trans2_Target->addItem("DEVICE D");
         }
         else if (Dev_name == "DEVICE D"){
@@ -146,7 +146,7 @@ subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
         else if (Dev_name == "DEVICE C"){
             ui->Trans3_Target->addItem("Select Target");
             ui->Trans3_Target->addItem("DEVICE A");
-            ui->Trans3_Target->addItem("DEVICE D");
+            ui->Trans3_Target->addItem("DEVICE B");
             ui->Trans3_Target->addItem("DEVICE D");
         }
         else if (Dev_name == "DEVICE D"){
@@ -173,7 +173,7 @@ subWindow::subWindow(QWidget *parent,int num_Trans, QString Dev_name,
         else if (Dev_name == "DEVICE C"){
             ui->Trans4_Target->addItem("Select Target");
             ui->Trans4_Target->addItem("DEVICE A");
-            ui->Trans4_Target->addItem("DEVICE D");
+            ui->Trans4_Target->addItem("DEVICE B");
             ui->Trans4_Target->addItem("DEVICE D");
         }
         else if (Dev_name == "DEVICE D"){
@@ -644,7 +644,8 @@ void subWindow::on_Trans2_pushButton_clicked(bool checked)
 
 
 
-void subWindow::on_Apply_button_clicked()
+
+void subWindow::on_Apply_clicked()
 {
     int error=0;
 
@@ -688,5 +689,3 @@ void subWindow::on_Apply_button_clicked()
     if(error==0)
         this->close();
 }
-
-

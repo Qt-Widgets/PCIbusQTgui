@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1289</width>
-    <height>791</height>
+    <width>1366</width>
+    <height>768</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -203,16 +203,16 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QLineEdit" name="DevA_Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevA_Byte3"/>
+                <widget class="QLineEdit" name="DevA_Byte1"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevA_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevA_Byte1"/>
+                <widget class="QLineEdit" name="DevA_Byte3"/>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="DevA_Byte4"/>
                </item>
               </layout>
              </item>
@@ -400,16 +400,16 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QLineEdit" name="DevB_Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevB_Byte3"/>
+                <widget class="QLineEdit" name="DevB_Byte1"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevB_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevB_Byte1"/>
+                <widget class="QLineEdit" name="DevB_Byte3"/>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="DevB_Byte4"/>
                </item>
               </layout>
              </item>
@@ -597,16 +597,16 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_7">
                <item>
-                <widget class="QLineEdit" name="DevC_Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevC_Byte3"/>
+                <widget class="QLineEdit" name="DevC_Byte1"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevC_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevC_Byte1"/>
+                <widget class="QLineEdit" name="DevC_Byte3"/>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="DevC_Byte4"/>
                </item>
               </layout>
              </item>
@@ -794,16 +794,16 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_9">
                <item>
-                <widget class="QLineEdit" name="DevD_Byte4"/>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="DevD_Byte3"/>
+                <widget class="QLineEdit" name="DevD_Byte1"/>
                </item>
                <item>
                 <widget class="QLineEdit" name="DevD_Byte2"/>
                </item>
                <item>
-                <widget class="QLineEdit" name="DevD_Byte1"/>
+                <widget class="QLineEdit" name="DevD_Byte3"/>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="DevD_Byte4"/>
                </item>
               </layout>
              </item>
@@ -820,14 +820,14 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>780</x>
+      <x>720</x>
       <y>570</y>
-      <width>75</width>
-      <height>41</height>
+      <width>110</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="text">
-     <string>DrawGraph</string>
+     <string>Simulate</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Submit">
@@ -910,13 +910,26 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>570</y>
+      <width>110</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start New Simulation</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1289</width>
+     <width>1366</width>
      <height>21</height>
     </rect>
    </property>
@@ -935,9 +948,9 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
-  <buttongroup name="buttonGroup_7"/>
   <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_7"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

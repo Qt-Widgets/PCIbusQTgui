@@ -9,6 +9,7 @@ class Device_Signals
 
 
 public:
+    bool secondTrans;
 
     Device_Signals();
 
@@ -20,11 +21,13 @@ public:
 
 
 
-    QVector <QString> get_controlSelect();
-    QVector <DEVICE*> get_targetSelect();
+    QString get_controlSelect();
+    DEVICE* get_targetSelect();
     int get_numOfTrans();
     int get_numOfPhases(int transaction_no);
     QString get_ByteEnable(int transaction_no , int DataPhase_no);
+
+    void decrementTrans();
 
 private:
     //variables to save values chosen by the user
@@ -32,6 +35,7 @@ private:
     QVector <QString> controlSelect;
     QVector <DEVICE*> targetSelect;
     QVector< QVector< QString > > DataPhases_ByteEnable;
+    int numberOfTransactions;
 };
 
 #endif // DEVICE_SIGNALS_H

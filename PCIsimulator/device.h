@@ -9,14 +9,19 @@ class DEVICE
 
 public:
     //constructor
-    DEVICE(QString);
+    DEVICE(QString name,QString pri);
 
-    void setREQ(QChar forceREQ);
-    QString getREQ();
+    void SetREQ(QString bit);
+    QString GetREQ();
+    QChar GetREQBit();
+    void REQtoggle();
 
-    void setGNT(QChar gnt);
-    QString getGNT();
+    void SetGNT(QString bit);
+    QString GetGNT();
+    QChar GetGNTBit();
+    void GNTtoggle();
 
+    void SetPreviousBit(QString Signals);
 
     void SetMemoryByte(QString data,int rowIndex, int ByteIndex);
     void SetMemoryWord(QString data,int rowIndex);
@@ -24,11 +29,18 @@ public:
     QString GetMemoryWord(int rowIndex);
     QString GetDeviceName();
 
+    QString GetPriority();
+    bool masterFlag;
+
+    QString GetMemoryByteEnable(int rowIndex,QString byteEnable);
+    void SetMemoryByteEnable(QString data, int rowIndex, QString byteEnable);
 private:
     QString Name;
     QString REQ;
     QString GNT;
     QVector< QVector< QString > > DeviceMemory;
+    QString priority;
+
 };
 
 #endif // DEVICE_H
